@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class LemonadeStand {
 
     /*
@@ -18,5 +20,34 @@ public class LemonadeStand {
     public static void main(String[] args) {
 
     }
+
+
+
+
+    public static void cups(){
+
+        double Tcups = Double.parseDouble(JOptionPane.showInputDialog("how many 20 cups did yuo sell"));
+        double Scups = Double.parseDouble(JOptionPane.showInputDialog("how many sixteen ounce cups?"));
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

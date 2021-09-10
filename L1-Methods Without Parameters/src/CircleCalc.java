@@ -1,17 +1,27 @@
-public class CircleCalc {
+import javax.swing.*;
+import java.text.DecimalFormat;
+1public class CircleCalc {
 
 
     public static void main(String[] args) {
-
-        //call the area method
-
-        //call the circumference method
-
+    area();
     }
+        //call the area method
+        public static void area () {
+        DecimalFormat round = new DecimalFormat("#.##");
+            double radius = Double.parseDouble(JOptionPane.showInputDialog("what is the radius?"));
+            double area =  Math.PI*(Math.pow(radius, 2));
+            JOptionPane.showMessageDialog(null,  "area is " + area);
+        }
 
-    //write a method to calculate a circle's area
+        public static void circum(){
+            double radius = Double.parseDouble(JOptionPane.showInputDialog("what is the radius?"));
+            double circum = 2* Math.PI *radius;
+            JOptionPane.showMessageDialog(null, "the C is " + circum);
 
 
-    //write a method to calculate a circle's circumference
+        }
+
+
 
 }
